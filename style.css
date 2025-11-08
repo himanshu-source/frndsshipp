@@ -1,0 +1,62 @@
+body{
+    background: linear-gradient(135deg, #c7ecee, #95afc0);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+.mail-png {
+  width: 400px;
+  height: 400px;
+  background: no-repeat center;
+  transition: 0.9s;
+  transition-delay: 0.8ms;
+}
+.mail-png.open{
+    background: none;
+}
+.mail-text {
+  margin-top: -130px;
+  text-align: center;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: none;
+  
+}
+.mail-png.open + .mail-text {
+  opacity: 1;
+  transition: opacity 0.4s ease 0.3s;
+  display: flex;
+  height: 20vh;
+}
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+  display: flex;
+}
+button {
+  background: #0984e3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+ transition: 0.5s;
+}
+
+button:hover {
+  background: #74b9ff;
+}
+.link-insta a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: blue;
+    font-size: 25px;
+}
+
